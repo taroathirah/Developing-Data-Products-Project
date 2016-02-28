@@ -1,0 +1,10 @@
+name: Developing_Data_Products_Project
+account: taroathirah
+server: shinyapps.io
+appId: 85991
+bundleId: 382755
+url: https://taroathirah.shinyapps.io/Developing_Data_Products_Project/
+when: 1456683757.65229
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: ui_.R|myDoc/index.Rmd|myDoc/assets/css/ribbons.css|project-figure/unnamed-chunk-2-1.png|project-figure/unnamed-chunk-3-1.png

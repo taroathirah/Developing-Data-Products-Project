@@ -17,7 +17,7 @@ My Shiny application allows the user to choose a car manufacturer from the list,
 2. An average value of the chosen car feature across all of the records associated with the chosen car manufacturer
 
 
-Development Approach
+Development Approach 
 ========================================================
 
 In order to develop this application, I first needed to extract the car manufacturer from the row names of the mtcars data. To do this I used the following codein the server.R file:
@@ -34,7 +34,11 @@ mtcars$makemodel <- rownames(mtcars)
 mtcars$make <- gsub( " .*$", "", mtcars$makemodel)
 ```
 
-For the chosen manufacturer and feature, the mean value was then derived in the way shown below. The variables "make" and "feature" in the code below represent the input values selected by the application user:
+
+
+Development Approach (cont)
+========================================================
+The variables "make" and "feature" in the code below represent the input values selected by the application user:
 
 
 ```r
@@ -60,17 +64,4 @@ The shiny application I developed has been published to the Shiny server at the 
 
 Alternatively, to reproduce this application locally you will need to install all of the relevant packages (see the [Getting Started with Shiny Apps](http://shiny.rstudio.com/articles/shinyapps.html) documantation for details). Next, you can run the ui.R and server.R files located in the same repository as this document to run the application locally.
 
-###Selecting a car feature
-A number of car features can be selected in this Shiny Application. Each feature is defined below:
-
-1. mpg - Miles/(US) gallon
-2. cyl - Number of cylinders
-3. disp	 - Displacement (cu.in.)
-4. hp	 - Gross horsepower
-5. drat	 - Rear axle ratio
-6. wt	 - Weight (lb/1000)
-7. qsec	 - 1/4 mile time
-8. vs	 - V/S
-9. am	 - Transmission (0 = automatic, 1 = manual)
-10. gear - Number of forward gears
-11. carb - Number of carburetors
+Thanks
